@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="aPropos.css">
+</head>
+<body>
+<header>
+        <nav class='navbar' aria-label="Navigation principale">
+            <div class="logo">
+                <img src="img/logo.png" alt="Description de mon logo"/>
+            </div>
+            <button class="burger" onclick="toggleMenu()">#</button>
+            <ul class="nav-links" id="navlinks">
+                    <li>
+                        <a href="index.html" tabindex="1">Test</a>
+                    </li>
+                    <li>
+                        <a href="APropos.html" tabindex="2">Test</a>
+                    </li>
+                    <li>
+                        <a href="Travaux.html" tabindex="3">Test</a>
+                    </li>
+                    <li>
+                        <a href="login.html" tabindex="4">Test</a>
+                    </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="comment-form">
+            <h1>Test</h1>
+                <p>Test</p>
+            <form>
+                <textarea rows="5" placeholder="Test" tabindex="5"></textarea>
+                <label>Test
+                <input type="text" required tabindex="6">
+                </label>
+                <label>Test
+                <input type="email" required tabindex="7">
+                </label>
+                <button type="submit">Test</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <p>Test</p>
+            <div class="icons">
+                <a href="#" tabindex="8"><img src="contact/phone.png" alt="Téléphone"></a>
+                <a href="#" tabindex="9"><img src="contact/instagram.png" alt="Instagram"></a>
+                <a href="#" tabindex="10"><img src="contact/twitter.png" alt="Twitter"></a>
+                <a href="contact.html" tabindex="11"><img src="contact/mail.png" alt="Email"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    function toggleMenu() {
+    const nav = document.getElementById('navlinks');
+    nav.classList.toggle('show');
+}
+</script>
+</html>
+
